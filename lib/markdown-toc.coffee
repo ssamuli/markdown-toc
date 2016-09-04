@@ -1,8 +1,9 @@
 Toc = require './Toc'
 
 atom.workspace.onDidOpen (event) ->
-  @toc = new Toc(event.item)
-  @toc.autosave()
+  if atom.config.get('markdown-toc.automatically-update')
+    @toc = new Toc(event.item)
+    @toc.autosave()
 
 module.exports =
   config:
