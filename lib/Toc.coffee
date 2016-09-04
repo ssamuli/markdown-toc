@@ -9,7 +9,7 @@ class Toc
       depthFrom: 1  # depthFrom
       depthTo: 6  # depthTo
       withLinks: 1  # withLinks
-      updateOnSave: 1 # updateOnSave
+      updateOnSave: if atom.config.get('markdown-toc.automatically-update') is true then 1 else 0 # updateOnSave
       orderedList: 0 # orderedList
 
     at = @

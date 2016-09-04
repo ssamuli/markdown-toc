@@ -1,6 +1,11 @@
 Toc = require './Toc'
 
 module.exports =
+  config:
+     'automatically-update':
+      title: 'Automatically update TOC',
+      type: 'boolean'
+      default: false
 
   activate: (state) ->
     atom.commands.add 'atom-workspace', 'markdown-toc:create': =>
