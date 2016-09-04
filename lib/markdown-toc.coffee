@@ -1,5 +1,9 @@
 Toc = require './Toc'
 
+atom.workspace.onDidOpen (event) ->
+  @toc = new Toc(event.item)
+  @toc.autosave()
+
 module.exports =
   config:
      'automatically-update':
