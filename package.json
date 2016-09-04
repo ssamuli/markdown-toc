@@ -8,7 +8,8 @@
       "markdown-toc:toggle",
       "markdown-toc:create",
       "markdown-toc:update",
-      "markdown-toc:delete"
+      "markdown-toc:delete",
+      "markdown-toc:toggle-autoupdate"
     ]
   },
   "repository": {

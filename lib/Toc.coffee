@@ -55,6 +55,11 @@ class Toc
     else
       @editor.insertText @_createToc()
 
+  toggle_autoupdate: ->
+    if @_hasToc()
+      @options.updateOnSave = +!@options.updateOnSave
+      @_deleteToc()
+      @editor.setTextInBufferRange [[@open,0], [@open,0]], @_createToc()
 
 
   # ----------------------------------------------------------------------------

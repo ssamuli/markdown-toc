@@ -27,7 +27,11 @@
         {
           'label': 'Remove TOC'
           'command': 'markdown-toc:delete'
-        }
+        },
+        {
+          'label': 'Toggle Autoupdate'
+          'command': 'markdown-toc:toggle-autoupdate'
+        },
       ]
     ]
   }

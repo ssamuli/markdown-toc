@@ -15,6 +15,9 @@ module.exports =
     atom.commands.add 'atom-workspace', 'markdown-toc:toggle': =>
         @toc = new Toc(atom.workspace.getActivePaneItem())
         @toc.toggle()
+    atom.commands.add 'atom-workspace', 'markdown-toc:toggle-autoupdate': =>
+        @toc = new Toc(atom.workspace.getActivePaneItem())
+        @toc.toggle_autoupdate()
 
   # deactivate: ->
   #   @toc.destroy()
